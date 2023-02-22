@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Update Datos"
+             x:Class="EJER3PM2.Views.PageUpdateDelete">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{Binding Id}" x:Name="id" Padding="0,0,0,0" TextColor="White"/>
+
+            <Label Text="Nombre" FontSize="Title" Padding="0,0,0,0"/>
+            <Entry x:Name="nombre" Text="{Binding Nombre}" Placeholder="Ingrese Nombre:" Keyboard="Text" Margin="5,0,5,0"/>
+
+            <Label Text="Apellidos" FontSize="Title" Padding="0,0,0,0"/>
+            <Entry x:Name="apellidos" Text="{Binding Apellidos}" Placeholder="Ingrese Apellidos:" Keyboard="Text" Margin="5,0,5,0"/>
+
+            <Label Text="Edad" FontSize="Title" Padding="0,0,0,0"/>
+            <Entry x:Name="edad" Text="{Binding Edad}" Placeholder="Ingrese Edad:" Keyboard="Numeric" Margin="5,0,5,0"/>
+
+            <Label Text="Correo" FontSize="Title" Padding="0,0,0,0"/>
+            <Entry x:Name="correo" Text="{Binding Correo}" Placeholder="Ingrese correo:" Keyboard="Email" Margin="5,0,5,0" />
+
+            <Label Text="Direccion" FontSize="Title" Padding="0,0,0,0"/>
+            <Entry x:Name="direccion" Text="{Binding Direccion}" Placeholder="Ingrese Direccion:" Keyboard="Text" Margin="5,0,5,0"/>
+
+            <Button Text="Actualizar" x:Name="btnactualizar" Clicked="btnactualizar_Clicked" BackgroundColor="AliceBlue" TextColor="Blue" />
+            <Button Text="Eliminar" x:Name="btneliminar" Clicked="btneliminar_Clicked" BackgroundColor="AliceBlue" TextColor="Blue" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
